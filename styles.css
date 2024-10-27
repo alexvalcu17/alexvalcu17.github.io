@@ -1,68 +1,160 @@
-
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.profile-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-}
-
-.profile-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 5%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.profile-info h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+  }
+  
+  body {
+    background-color: #f9fafb;
     color: #333;
+    padding: 20px;
+  }
+
+  :root {
+    --main-color: #239F47;
+    --secondary-color: #777;
+    --background-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-.profile-info p {
-    font-size: 16px;
+  h3 {
+    font-size: 1em;
+  }
+  
+  .title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    margin-bottom: 40px;
+}
+
+.title-text h1 {
+    font-size: 2.8em;
+    color: var(--main-color);
+    margin-bottom: 0.1em;
+    margin-left: 10vw;
+}
+
+.title-text h2 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin-left: 10vw;
+}
+
+.title-section .main-photo {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-right: 10vw;
+}
+
+/* Team section */
+.team-section {
+    margin: 40px 0;
+}
+
+.team-section h2 {
+    font-size: 2.2em;
+    text-align: center;
+    color: var(--main-color);
     margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--background-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.1em;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9em;
     color: #555;
 }
 
-.social-links {
-    list-style: none;
-    padding: 0;
+/* Problem and Solution Section */
+.problem-solution-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
 }
 
-.social-links li {
-    display: inline-block;
-    margin: 0 10px;
+.problem, .solution, .value {
+    background-color: var(--background-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    flex: 1;
 }
 
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+}
 
-.social-links a:hover {
-    color: #005582;
+/* Sections */
+.customer-segments, .competition, .advantage, .key-metrics, .cost-structure, .revenue-streams {
+    background-color: var(--background-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.customer-segments h2, .competition h2, .advantage h2, .key-metrics h2, .cost-structure h2, .revenue-streams h2 {
+    font-size: 1.8em;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+}
+
+/* General Card Styles */
+.team-cards .card, .problem-solution-section .problem, .problem-solution-section .solution, .problem-solution-section .value {
+    transition: transform 0.3s ease;
+}
+
+.team-cards .card:hover, .problem-solution-section .problem:hover, .problem-solution-section .solution:hover, .problem-solution-section .value:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--shadow-color);
 }
