@@ -285,6 +285,11 @@ h2 {
 
     .team-cards {
         gap: 15px;
+        align-items: center;
+    }
+
+    .other-card {
+        margin: auto;
     }
 
     .card {
