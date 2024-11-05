@@ -152,6 +152,36 @@ h3 {
 }
 
 
+.other-card2 {
+    background-color: var(--background-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.other-card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+
+.other-card2 p {
+    font-size: 0.8em;
+    color: #555;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.other-card2 p:first-of-type {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+
 .problem-solution-section {
     display: flex;
     text-align: center;
@@ -161,7 +191,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-.problem, .solution, .value {
+.problem, .solution, .value, .customer-discovery {
     background-color: var(--background-color);
     border: 1px solid var(--main-color);
     border-radius: 10px;
@@ -292,6 +322,10 @@ h2 {
         margin: auto;
     }
 
+    .other-card2 {
+        margin: auto;
+    }
+
     .card {
         width: 100%;
         padding: 15px;
@@ -313,6 +347,9 @@ h2 {
         margin: auto;
     }
 
+    .other-card2 {
+        margin: auto;
+    }
 
     .card {
         width: 100%;
