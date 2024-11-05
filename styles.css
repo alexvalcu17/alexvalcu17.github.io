@@ -327,6 +327,7 @@ h2 {
     h2 {
         font-size: 1.3em;
     }
+
     .text-and-image {
         flex-direction: column;
         align-items: center;
@@ -374,6 +375,18 @@ h2 {
         width: 100%;
         padding: 15px;
     }
+
+    .text-and-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-image {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -398,5 +411,17 @@ h2 {
     .card {
         width: 100%;
         padding: 15px;
+    }
+
+    .text-and-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-image {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+        width: 100%;
     }
 }
