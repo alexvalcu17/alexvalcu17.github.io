@@ -191,7 +191,28 @@ h3 {
     flex-wrap: wrap;
 }
 
-.problem, .solution, .value, .customer-discovery {
+.text-and-image {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-and-image p {
+    flex: 1;
+}
+
+.right-image {
+    margin-left: 15px;
+    max-width: 350px; /* Adjust the size as needed */
+    border-radius: 10px;
+}
+
+.right-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+
+.problem, .solution, .value, .customer-discovery, .process-in-detail, .process, .affect-product, .customer-validation {
     background-color: var(--background-color);
     border: 1px solid var(--main-color);
     border-radius: 10px;
