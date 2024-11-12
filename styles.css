@@ -457,10 +457,12 @@ h2 {
 
     .other-card3 {
         margin: auto;
+        width: 220px;
     }
 
     .other-card4 {
         margin: auto;
+        width: 300px;
     }
 
     .card {
