@@ -38,20 +38,20 @@ h3 {
     font-size: 3.8em;
     color: var(--main-color);
     margin-bottom: 0.1em;
-    margin-left: 10vw;
+    margin-left: 9vw;
 }
 
 .title-text h2 {
     font-size: 2em;
     color: var(--secondary-color);
-    margin-left: 10vw;
+    margin-left: 9vw;
 }
 
 .title-section .main-photo {
     width: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--shadow-color);
-    margin-right: 10vw;
+    margin-right: 9vw;
 }
 
 .team-section {
@@ -86,6 +86,14 @@ h3 {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+img.landing2 {
+    margin-top: 1vh;
+    margin-left: 15px;
+    max-width: 850px;
+    max-height: 600px ; /* Adjust the size as needed */
+    border-radius: 10px;
 }
 
 .card img {
@@ -182,6 +190,7 @@ h3 {
 }
 
 .other-card3 {
+    margin-top: 3vh;
     background-color: var(--background-color);
     border: 1px solid var(--main-color);
     border-radius: 10px;
